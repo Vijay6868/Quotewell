@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Author"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="#e9ebf0"
+            android:id="@+id/tv_author"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_author"
+            android:id="@+id/tv_quote"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:text="tough time neve last tough people do"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

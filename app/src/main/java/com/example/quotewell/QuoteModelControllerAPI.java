@@ -24,7 +24,7 @@ public class QuoteModelControllerAPI
     private DataCallback callback;
 
     public QuoteModelControllerAPI(DataCallback callback, String keyword, Context context) {
-        this.baseURL = baseURL;
+
         list = new QuotesModelList();
         this.url = String.format(baseURL, keyword);
         this.context = context;

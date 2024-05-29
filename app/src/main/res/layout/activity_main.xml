@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#f2f7ff">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:hint="Search"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_searchBar"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/et_searchBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_search"
+        android:background="@color/black"
+        android:id="@+id/bt_search"
+        android:padding="5dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_searchBar"
+        android:layout_marginTop="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recView"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
