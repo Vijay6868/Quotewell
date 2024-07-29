@@ -8,6 +8,8 @@ QuoteWell is an Android application that allows users to fetch and display quote
 - Display a list of quotes.
 - Simple and clean user interface.
 
+  ![](snapshots/1.png)![](snapshots/2.png)
+
 ## Technologies Used
 
 - Java
